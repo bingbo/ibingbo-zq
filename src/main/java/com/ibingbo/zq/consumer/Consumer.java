@@ -5,4 +5,8 @@ package com.ibingbo.zq.consumer;
  */
 public interface Consumer {
     void consume() throws Exception;
+
+    default String version() {
+        return "1.0.0";
+    }
 }

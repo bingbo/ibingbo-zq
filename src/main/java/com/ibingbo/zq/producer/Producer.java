@@ -5,4 +5,12 @@ package com.ibingbo.zq.producer;
  */
 public interface Producer {
     String produce(String queue, byte[] bytes) throws Exception;
+
+    /**
+     * @since 1.8
+     * @return
+     */
+    default String version() {
+        return "1.0.0";
+    }
 }
