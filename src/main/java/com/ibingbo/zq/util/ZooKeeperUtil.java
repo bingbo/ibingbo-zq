@@ -20,7 +20,7 @@ public class ZooKeeperUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(ZooKeeperUtil.class);
 
     private static String CONNECTION_STRING = "localhost:2181";
-    private static int SESSION_TIMEOUT = 10000;
+    private static int SESSION_TIMEOUT = 100000;
 
     /**
      * 获取zookeeper实例，确保连接成功后返回
